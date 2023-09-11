@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.page-actions-cont{
+    height: 2.5rem;
+    background-color: #218c78;
+    display: flex;
+    align-items: center;
+}
+.page-action{
+    margin-left: .5rem;
+    color: white;
+}
+
+.cellprop-actions-cont{
+    height: 2.5rem;
+    background-color: rgb(227, 238, 244);
+    display: flex;
+    align-items: center;
+}
+.cellprop-actions-cont > *{
+    margin: 0.5rem;
+}
+.cellprop-actions-cont > select{
+    border: none;
+    border-radius: 2px;
+}
+
+.formula-actions-cont{
+    height: 2rem;
+    background-color: rgb(227, 238, 244);
+    display: flex;
+    align-items: center;
+}
+.address-bar{
+    width: 4rem;
+    height: 1.4rem;
+    margin-left: .5rem;
+    outline: none;
+    border: none;
+}
+.formula-icon{
+    width: 1.2rem;
+    height: 1rem;
+    margin-left: .5rem;
+}
+.formula-bar{
+    width: calc(100vw - 6.5rem );
+    height: 1.4rem;
+    margin-left: .5rem;
+    outline: none;
+    border: none;
+}
+
+.sheet-actions-cont{
+    height: 2rem;
+    background-color: rgb(234, 240, 246);
+    display: flex;
+    align-items: center;
+}
+.sheet-actions-cont > *{
+    margin-left: .5rem;
+}
+.sheets-folder-cont{
+    height: 1.6rem;
+    width: 98%;
+    /* background-color: yellow; */
+}
+.sheet-folder{
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.grid-cont{
+    height: calc( 100vh - 9rem );
+    /* display: flex; */
+    position: relative;
+    overflow: scroll;
+}
+.top-left-dummy-box{
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(142, 142, 146);
+}
+.address-col-cont{
+    width: 2rem;
+    height: 10rem;
+}
+.address-row-cont{
+    /* width: 10rem; */
+    height: 2rem;
+    /* background-color: lightpink; */
+    display: flex;
+}
+.cells-cont{
+    /* overflow: hidden; */
+    position: absolute;
+    top:0 ;
+    left: 2rem;
+    height: 2rem;
+    /* width: 10rem; */
+}
+.col-count{
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row-count{
+    width: 6rem;
+    height: 2rem;
+    border: 1px solid lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
