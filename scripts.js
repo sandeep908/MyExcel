@@ -19,14 +19,3 @@ for(let i=0 ;i<cols ;i++){
     addressRow.innerHTML =String.fromCharCode(65+i) ;
     addressRowCont.appendChild(addressRow) ;
 }
-
-for(let i=0 ;i<rows ;i++){
-    let cellRow = document.createElement("div") ;
-    cellRow.setAttribute("class" ,"cell-row") ;
-    for(let j=0 ;j<cols ;j++){
-        let cellCol = document.createElement("div") ;
-        cellCol.setAttribute("class" ,"cell-col") ;
-        cellRow.appendChild(cellCol) ;
-    }
-    cellCont.appendChild(cellRow) ;
-}
