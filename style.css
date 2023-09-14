@@ -135,8 +135,17 @@ body{
     border: 1px solid lightgrey;
     outline: none ;
 }
-
-
+.color-props{
+    position:relative ;
+}
+.color-props > input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
 
 
 
