@@ -5,6 +5,7 @@ let cols = 26 ;
 let addressColCont = document.querySelector(".address-col-cont") ;
 let addressRowCont = document.querySelector(".address-row-cont") ;
 let cellCont = document.querySelector(".cells-cont") ;
+let addressBar = document.querySelector(".address-bar") ;
 
 for(let i=0 ;i<rows ;i++){
     let addressCol= document.createElement("div") ;
@@ -26,7 +27,17 @@ for(let i=0 ;i<rows ;i++){
     for(let j=0 ;j<cols ;j++){
         let cellCol = document.createElement("div") ;
         cellCol.setAttribute("class" ,"cell-col") ;
+        cellCol.setAttribute("contenteditable" , "ture") ;
         cellRow.appendChild(cellCol) ;
+        addListenerForAddressBar(cellCol ,i ,j) ;
     }
     cellCont.appendChild(cellRow) ;
+}
+
+function addListenerForAddressBar(cellCol ,i ,j){
+    cellCol.addEventListener("click" ,(e)=>{
+        let rowID = i+1 ;
+        let colID = String.fromCharCode(65+j) ;
+        addressBar.value = `${colID}${rowID}` ;
+    })
 }
