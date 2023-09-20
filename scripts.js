@@ -28,6 +28,9 @@ for(let i=0 ;i<rows ;i++){
         let cellCol = document.createElement("div") ;
         cellCol.setAttribute("class" ,"cell-col") ;
         cellCol.setAttribute("contenteditable" , "ture") ;
+        cellCol.setAttribute("rid" ,i);
+        cellCol.setAttribute("cid" ,j);
+        cellCol.setAttribute("spellcheck" ,"false");
         cellRow.appendChild(cellCol) ;
         addListenerForAddressBar(cellCol ,i ,j) ;
     }
@@ -41,3 +44,5 @@ function addListenerForAddressBar(cellCol ,i ,j){
         addressBar.value = `${colID}${rowID}` ;
     })
 }
+let firstCell = document.querySelector(".cellCol") ;
+firstCell.click() ;
