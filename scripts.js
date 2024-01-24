@@ -13,7 +13,7 @@ for(let i=0 ;i<rows ;i++){
     addressCol.innerHTML =i+1;
     addressColCont.appendChild(addressCol) ;
 }
-
+// making changes into rows and columns
 for(let i=0 ;i<cols ;i++){
     let addressRow= document.createElement("div") ;
     addressRow.setAttribute("class" ,"row-count") ;
